@@ -10,37 +10,37 @@ Iframes and Images can be mixed. You can have multiple lightboxes across a page.
 Check out the minimal example below:
 
 ´´´ html
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Your Page</title>
-        <!-- Olbox CSS -->
-        <link href="css/olbox.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- header -->
-        <header>
-            <h1>My awesome header</h1>
-        </header>
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Your Page</title>
+            <!-- Olbox CSS -->
+            <link href="css/olbox.min.css" rel="stylesheet">
+        </head>
+        <body>
+            <!-- header -->
+            <header>
+                <h1>My awesome header</h1>
+            </header>
 
-        <!-- whatever other code you use -->
+            <!-- whatever other code you use -->
 
-        <span data-olbox="<iframe src='http://halfapx.com/' width='100%' height='500px'></iframe>">Toggles Iframe Container</span>
-        <span data-olbox="https://www.youtube.com/embed/nIhLQ8E9c1s?">Toggles Responsive Iframe</span>
-        <span data-olbox="http://halfapx.com/img/posts/collection.jpg">Toggles Image</span>
+            <span data-olbox="<iframe src='http://halfapx.com/' width='100%' height='500px'></iframe>">Toggles Iframe Container</span>
+            <span data-olbox="https://www.youtube.com/embed/nIhLQ8E9c1s?">Toggles Responsive Iframe</span>
+            <span data-olbox="http://halfapx.com/img/posts/collection.jpg">Toggles Image</span>
 
-        <!-- whatever other code you use -->
+            <!-- whatever other code you use -->
 
-        <!-- jQuery -->
-        <script src="js/jquery.min.js"></script>
-        <!-- jQuery Olbox -->
-        <script src="js/jquery.olbox.min.js"></script>
-        <!-- initiate sticky nav -->
-        <script>
-            $('span').olbox();
-        </script>
-    </body>
-</html>
+            <!-- jQuery -->
+            <script src="js/jquery.min.js"></script>
+            <!-- jQuery Olbox -->
+            <script src="js/jquery.olbox.min.js"></script>
+            <!-- initiate sticky nav -->
+            <script>
+                $('span').olbox();
+            </script>
+        </body>
+    </html>
 ´´´
 
 ## Types of Media
@@ -59,14 +59,14 @@ The Other Method is iFrame Link. Add the link to the site you want to open in an
 Here are all of the Options with the defaults.
 
 ´´´ js
-$(selector).olbox({
-    iframeRatioWidth : 16, // used for responsive iframe aspectRatio
-    iframeRatioHeight:  9, // used for responsive iframe aspectRatio
-    includeVisualNavigator: true, // include arrow buttons to navigate
-    includeKeyNavigator: true, // include option to navigate with arrow keys
-    dataAttribute: 'olbox', // set custom data-attribute (for example if multiple separate lightboxes will be needed)
-    debug: false // setting to true will add console.logs after some of the steps
-});
+    $(selector).olbox({
+        iframeRatioWidth : 16, // used for responsive iframe aspectRatio
+        iframeRatioHeight:  9, // used for responsive iframe aspectRatio
+        includeVisualNavigator: true, // include arrow buttons to navigate
+        includeKeyNavigator: true, // include option to navigate with arrow keys
+        dataAttribute: 'olbox', // set custom data-attribute (for example if multiple separate lightboxes will be needed)
+        debug: false // setting to true will add console.logs after some of the steps
+    });
 ´´´
 
 ## Having multiple lightboxes
@@ -74,8 +74,8 @@ If you want to have different navigations, you'll have to set different data-att
 Example set ´data-olbox-video´ for all of your videos and ´data-olbox-image´ for all the images. Then toggle like so:
 
 ´´´ js
-$('span[data-olbox-video]').olbox({dataAttribute: 'olbox-video'});
-$('span[data-olbox-image]').olbox({dataAttribute: 'olbox-image'});
+    $('span[data-olbox-video]').olbox({dataAttribute: 'olbox-video'});
+    $('span[data-olbox-image]').olbox({dataAttribute: 'olbox-image'});
 ´´´
 
 ## CSS
