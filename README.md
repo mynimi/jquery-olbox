@@ -4,7 +4,7 @@ A super simple responsive lightbox plugin that opens images and iframes includin
 ## What does it do?
 The Plugin will read for a data-attribute, check if it's a link or an iframe tag, decide whether to use an image or iframe tag and open up. It comes with a navigator.
 
-Iframes and Images can be mixed. You can have multiple lightboxes across a page. So a separate navigator for each category as an examples.
+iframes and Images can be mixed. You can have multiple lightboxes across a page. So a separate navigator for each category as an examples.
 
 ## Basic Use
 Check out the minimal example below:
@@ -25,9 +25,9 @@ Check out the minimal example below:
 
             <!-- whatever other code you use -->
 
-            <span data-olbox="<iframe src='http://halfapx.com/' width='100%' height='500px'></iframe>">Toggles Iframe Container</span>
-            <span data-olbox="https://www.youtube.com/embed/nIhLQ8E9c1s?">Toggles Responsive Iframe</span>
-            <span data-olbox="http://halfapx.com/img/posts/collection.jpg">Toggles Image</span>
+            <span data-olbox="<iframe src='http://halfapx.com/' width='100%' height='500px'></iframe>">Toggles iframe container</span>
+            <span data-olbox="https://www.youtube.com/embed/nIhLQ8E9c1s?">Toggles responsive iframe</span>
+            <span data-olbox="http://halfapx.com/img/posts/collection.jpg">Toggles image</span>
 
             <!-- whatever other code you use -->
 
@@ -35,7 +35,7 @@ Check out the minimal example below:
             <script src="js/jquery.min.js"></script>
             <!-- jQuery Olbox -->
             <script src="js/jquery.olbox.min.js"></script>
-            <!-- initiate sticky nav -->
+            <!-- initiate Olbox -->
             <script>
                 $('span').olbox();
             </script>
@@ -49,11 +49,11 @@ As you can see there are 3 different ways to use olbox.
 ### Image
 This is the most common way, just add the link to your image and your all set, it will be added and be responsive.
 
-### Iframe Container
+### iframe Container
 You can add full iframe Tags withn the data attribute. Just make sure to use other quotes within. The added Lightbox will be responsive, however the height of the iframe will not be adjusted, I do not recommend this method, but there are cases where it might be desired.
 
-### Iframe Link
-The Other Method is iFrame Link. Add the link to the site you want to open in an iframe. Using the paddinghack, the iframe will be placed responsively with a fixed aspect ratio. By default the ratio is set to be 16:9 which should work amongst most types of iframes, like video or websites.
+### iframe Link
+The Other Method is iframe Link. Add the link to the site you want to open in an iframe. Using the paddinghack, the iframe will be placed responsively with a fixed aspect ratio. By default the ratio is set to be 16:9 which should work amongst most types of iframes, like video or websites.
 
 ## Options
 Here are all of the Options with the defaults.
