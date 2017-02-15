@@ -9,7 +9,7 @@ Iframes and Images can be mixed. You can have multiple lightboxes across a page.
 ## Basic Use
 Check out the minimal example below:
 
-´´´ html
+``` html
     <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -41,7 +41,7 @@ Check out the minimal example below:
             </script>
         </body>
     </html>
-´´´
+```
 
 ## Types of Media
 As you can see there are 3 different ways to use olbox.
@@ -58,7 +58,7 @@ The Other Method is iFrame Link. Add the link to the site you want to open in an
 ## Options
 Here are all of the Options with the defaults.
 
-´´´ js
+``` js
     $(selector).olbox({
         iframeRatioWidth : 16, // used for responsive iframe aspectRatio
         iframeRatioHeight:  9, // used for responsive iframe aspectRatio
@@ -67,16 +67,16 @@ Here are all of the Options with the defaults.
         dataAttribute: 'olbox', // set custom data-attribute (for example if multiple separate lightboxes will be needed)
         debug: false // setting to true will add console.logs after some of the steps
     });
-´´´
+```
 
 ## Having multiple lightboxes
 If you want to have different navigations, you'll have to set different data-attributes for each set.
-Example set ´data-olbox-video´ for all of your videos and ´data-olbox-image´ for all the images. Then toggle like so:
+Example set `data-olbox-video` for all of your videos and `data-olbox-image` for all the images. Then toggle like so:
 
-´´´ js
+``` js
     $('span[data-olbox-video]').olbox({dataAttribute: 'olbox-video'});
     $('span[data-olbox-image]').olbox({dataAttribute: 'olbox-image'});
-´´´
+```
 
 ## CSS
 The Plugin comes with a stylesheet. There is a Sass file with Variables for easy overwriting. Make sure to use Autoprefixer when compiling or add the needed prefixes for it to work across the board.
