@@ -47,10 +47,10 @@ Check out the minimal example below:
 As you can see there are 3 different ways to use olbox.
 
 ### Image
-This is the most common way, just add the link to your image and your all set, it will be added and be responsive.
+This is the most common way, just add the link to your image and you're all set, it will be added and responsive.
 
 ### iframe Container
-You can add full iframe Tags withn the data attribute. Just make sure to use other quotes within. The added Lightbox will be responsive, however the height of the iframe will not be adjusted, I do not recommend this method, but there are cases where it might be desired.
+You can add full iframe Tags within the data attribute. Just make sure to use other quotes within. The added Lightbox will be responsive, however the height of the iframe will not be adjusted, I do not recommend this method, but there are cases where it might be desired.
 
 ### iframe Link
 The Other Method is iframe Link. Add the link to the site you want to open in an iframe. Using the paddinghack, the iframe will be placed responsively with a fixed aspect ratio. By default the ratio is set to be 16:9 which should work amongst most types of iframes, like video or websites.
